@@ -1,0 +1,14 @@
+C:\Users\allen\OneDrive\Documents\GitHub\Quadax-Programming-Exercise\bin\Debug\net8.0\Quadax-Programming-Exercise.exe
+C:\Users\allen\OneDrive\Documents\GitHub\Quadax-Programming-Exercise\bin\Debug\net8.0\Quadax-Programming-Exercise.deps.json
+C:\Users\allen\OneDrive\Documents\GitHub\Quadax-Programming-Exercise\bin\Debug\net8.0\Quadax-Programming-Exercise.runtimeconfig.json
+C:\Users\allen\OneDrive\Documents\GitHub\Quadax-Programming-Exercise\bin\Debug\net8.0\Quadax-Programming-Exercise.dll
+C:\Users\allen\OneDrive\Documents\GitHub\Quadax-Programming-Exercise\bin\Debug\net8.0\Quadax-Programming-Exercise.pdb
+C:\Users\allen\OneDrive\Documents\GitHub\Quadax-Programming-Exercise\obj\Debug\net8.0\Quadax-Programming-Exercise.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\allen\OneDrive\Documents\GitHub\Quadax-Programming-Exercise\obj\Debug\net8.0\Quadax-Programming-Exercise.AssemblyInfoInputs.cache
+C:\Users\allen\OneDrive\Documents\GitHub\Quadax-Programming-Exercise\obj\Debug\net8.0\Quadax-Programming-Exercise.AssemblyInfo.cs
+C:\Users\allen\OneDrive\Documents\GitHub\Quadax-Programming-Exercise\obj\Debug\net8.0\Quadax-Programming-Exercise.csproj.CoreCompileInputs.cache
+C:\Users\allen\OneDrive\Documents\GitHub\Quadax-Programming-Exercise\obj\Debug\net8.0\Quadax-Programming-Exercise.dll
+C:\Users\allen\OneDrive\Documents\GitHub\Quadax-Programming-Exercise\obj\Debug\net8.0\refint\Quadax-Programming-Exercise.dll
+C:\Users\allen\OneDrive\Documents\GitHub\Quadax-Programming-Exercise\obj\Debug\net8.0\Quadax-Programming-Exercise.pdb
+C:\Users\allen\OneDrive\Documents\GitHub\Quadax-Programming-Exercise\obj\Debug\net8.0\Quadax-Programming-Exercise.genruntimeconfig.cache
+C:\Users\allen\OneDrive\Documents\GitHub\Quadax-Programming-Exercise\obj\Debug\net8.0\ref\Quadax-Programming-Exercise.dll
