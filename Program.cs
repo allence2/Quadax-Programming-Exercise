@@ -3,6 +3,21 @@ using System.Text;
 
     class Program {
 
+        private static int[] numbersToArray(int number) {
+            int[] array = new int[4];
+            int count = 3;
+            while (number != 0) {
+                array[count] = number % 10;
+                number /= 10;
+                count--;
+            }
+        }
+
+        private static string compareNumbers(int[] answer, int[] userInput) {
+            string str = "";
+            return str;
+        }
+
         /*Method for generating a random number where digits are beween 1 and 6 (Inclusively) for each digit */
         private static int generateRandomNumber() {
             StringBuilder randomNumber = new StringBuilder("", 4);
@@ -47,6 +62,8 @@ using System.Text;
                 } while (!userValidInput);
 
                 // Compare the two inputs
+                compareNumbers(numbersToArray(answer), numbersToArray(userInput));
+
             }; 
             return 0;
         }
