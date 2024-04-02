@@ -11,11 +11,36 @@ using System.Text;
                 number /= 10;
                 count--;
             }
+            return array;
+        } 
+
+        private static string generateHint(int count, string str) {
+            StringBuilder temp = new StringBuilder();
+            for(int i = 0; i < count; i++) {
+                temp.Append(str);
+            }
+            return temp.ToString();
         }
 
         private static string compareNumbers(int[] answer, int[] userInput) {
-            string str = "";
-            return str;
+            StringBuilder hint = new StringBuilder("", 4);
+            int plusCount = 0;
+            int minusCount = 0;
+            int blankCount = 0;
+            for(int i = 0; i < 4; i++) {
+                if(answer[i] == userInput[i]) {
+                    plusCount++;
+                    answer[i] = -2;
+                } else if (Array.IndexOf(answer, userInput[i]) > -1) {
+                    minusCount++;
+                } else {
+                    blankCount++;
+                }
+            }
+            hint.Append(generateHint(plusCount, "+"));
+            hint.Append(generateHint(minusCount, "-"));
+            hint.Append(generateHint(blankCount, " "));
+            return String.Join("", hint);
         }
 
         /*Method for generating a random number where digits are beween 1 and 6 (Inclusively) for each digit */
@@ -33,15 +58,17 @@ using System.Text;
         }
 
         static int Main(string[] args) {
-            int tries = 10, count = 1;
+            int count = 1;
             int answer = generateRandomNumber();
+            Console.WriteLine("Answer = " + answer);
 
-            while (count > 0) {
+            while (count <= 10) {
                 int userInput;
                 bool userValidInput = false;
 
                 // User input until they have given a valid number
                 do {
+                    Console.WriteLine("Attempts remaining: " + (11 - count));
                     Console.WriteLine("Enter as four digit number (Digits are 1-6): ");
                     if(int.TryParse(Console.ReadLine(), out userInput) && userInput > 999 && userInput < 10000) {
                         int temp = userInput;
@@ -57,14 +84,24 @@ using System.Text;
                         }
                     }
                     if(!userValidInput) {
-                        Console.WriteLine("Incorrect number entered. Try Again.");
+                        Console.WriteLine("Invalid number entered. Try Again.");
                     }
                 } while (!userValidInput);
 
                 // Compare the two inputs
-                compareNumbers(numbersToArray(answer), numbersToArray(userInput));
+                string hint = compareNumbers(numbersToArray(answer), numbersToArray(userInput));
+                if(String.Equals(hint, "++++")) {
+                    Console.WriteLine("Correct! You guessed it in " + count + " attempts");
+                    break;
+                } else {
+                    Console.WriteLine(hint);
+                    count++;
+                }
 
             }; 
+            if (count > 10) {
+                Console.WriteLine("Failed number of attempts. The correct answer was " + answer);
+            }
             return 0;
         }
     }
