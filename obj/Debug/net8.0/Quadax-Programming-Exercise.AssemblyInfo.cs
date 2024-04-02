@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Quadax-Programming-Exercise")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+955cbee97063ea4ca58c068fd55333d4d1ef98dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1bc13f5d02551804dfd07537b1d5d85e67262572")]
 [assembly: System.Reflection.AssemblyProductAttribute("Quadax-Programming-Exercise")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Quadax-Programming-Exercise")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
